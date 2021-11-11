@@ -42,49 +42,49 @@ class PokemonAdapter(var lista:Array<Pokemon?>):RecyclerView.Adapter<PokemonAdap
 
                 //view.contenedorPokemon.setBackgroundColor(R.color.type_normal)
 
-                /*when (pokemon.types[0].type.name) {
-                    "normal" -> {
-                        view.contenedorPokemon.setBackgroundColor(R.color.type_normal)
-                        Log.v("NORMAl", pokemon.toString())
-                    }
+                //view.contenedorPokemon.setBackgroundColor(view.contenedorPokemon.context.resources.getColor(R.color.type_normal))
+                //view.contenedorPokemon.setBackgroundColor(view.contenedorPokemon.context.resources.getColor(R.color.type_ground))
 
-                    "fighting" -> view.contenedorPokemon.setBackgroundColor(R.color.type_fighting)
+                when (pokemon.types[0].type.name) {
+                    "normal" -> view.contenedorPokemon.setBackgroundColor(view.contenedorPokemon.context.resources.getColor(R.color.type_normal))
 
-                    "flying" -> view.contenedorPokemon.setBackgroundColor(R.color.type_flying)
+                    "fighting" -> view.contenedorPokemon.setBackgroundColor(view.contenedorPokemon.context.resources.getColor(R.color.type_fighting))
 
-                    "poison" -> view.contenedorPokemon.setBackgroundColor(R.color.type_poison)
+                    "flying" -> view.contenedorPokemon.setBackgroundColor(view.contenedorPokemon.context.resources.getColor(R.color.type_flying))
 
-                    "ground" -> view.contenedorPokemon.setBackgroundColor(R.color.type_ground)
+                    "poison" -> view.contenedorPokemon.setBackgroundColor(view.contenedorPokemon.context.resources.getColor(R.color.type_poison))
 
-                    "rock" -> view.contenedorPokemon.setBackgroundColor(R.color.type_rock)
+                    "ground" -> view.contenedorPokemon.setBackgroundColor(view.contenedorPokemon.context.resources.getColor(R.color.type_ground))
 
-                    "bug" -> view.contenedorPokemon.setBackgroundColor(R.color.type_bug)
+                    "rock" -> view.contenedorPokemon.setBackgroundColor(view.contenedorPokemon.context.resources.getColor(R.color.type_rock))
 
-                    "steel" -> view.contenedorPokemon.setBackgroundColor(R.color.type_steel)
+                    "bug" -> view.contenedorPokemon.setBackgroundColor(view.contenedorPokemon.context.resources.getColor(R.color.type_bug))
 
-                    "ghost" -> view.contenedorPokemon.setBackgroundColor(R.color.type_ghost)
+                    "steel" -> view.contenedorPokemon.setBackgroundColor(view.contenedorPokemon.context.resources.getColor(R.color.type_steel))
 
-                    "fire" -> view.contenedorPokemon.setBackgroundColor(R.color.type_fire)
+                    "ghost" -> view.contenedorPokemon.setBackgroundColor(view.contenedorPokemon.context.resources.getColor(R.color.type_ghost))
 
-                    "water" -> view.contenedorPokemon.setBackgroundColor(R.color.type_water)
+                    "fire" -> view.contenedorPokemon.setBackgroundColor(view.contenedorPokemon.context.resources.getColor(R.color.type_fire))
 
-                    "grass" -> view.contenedorPokemon.setBackgroundColor(R.color.type_grass)
+                    "water" -> view.contenedorPokemon.setBackgroundColor(view.contenedorPokemon.context.resources.getColor(R.color.type_water))
 
-                    "electric" -> view.contenedorPokemon.setBackgroundColor(R.color.type_electric)
+                    "grass" -> view.contenedorPokemon.setBackgroundColor(view.contenedorPokemon.context.resources.getColor(R.color.type_grass))
 
-                    "psychic" -> view.contenedorPokemon.setBackgroundColor(R.color.type_psychic)
+                    "electric" -> view.contenedorPokemon.setBackgroundColor(view.contenedorPokemon.context.resources.getColor(R.color.type_electric))
 
-                    "ice" -> view.contenedorPokemon.setBackgroundColor(R.color.type_ice)
+                    "psychic" -> view.contenedorPokemon.setBackgroundColor(view.contenedorPokemon.context.resources.getColor(R.color.type_psychic))
 
-                    "dragon" -> view.contenedorPokemon.setBackgroundColor(R.color.type_dragon)
+                    "ice" -> view.contenedorPokemon.setBackgroundColor(view.contenedorPokemon.context.resources.getColor(R.color.type_ice))
 
-                    "dark" -> view.contenedorPokemon.setBackgroundColor(R.color.type_dark)
+                    "dragon" -> view.contenedorPokemon.setBackgroundColor(view.contenedorPokemon.context.resources.getColor(R.color.type_dragon))
 
-                    "fairy" -> view.contenedorPokemon.setBackgroundColor(R.color.type_fairy)
+                    "dark" -> view.contenedorPokemon.setBackgroundColor(view.contenedorPokemon.context.resources.getColor(R.color.type_dark))
 
-                    else -> view.contenedorPokemon.setBackgroundColor(R.color.rojo)
+                    "fairy" -> view.contenedorPokemon.setBackgroundColor(view.contenedorPokemon.context.resources.getColor(R.color.type_fairy))
 
-                }*/
+                    else -> view.contenedorPokemon.setBackgroundColor(view.contenedorPokemon.context.resources.getColor(R.color.rojo))
+
+                }
                 //view.contenedorPokemon.setBackgroundColor(R.color.type_normal)
             }
         }
